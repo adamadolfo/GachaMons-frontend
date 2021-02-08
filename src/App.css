@@ -8,18 +8,18 @@
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     height: max-content; 
-    /* height: 937px;
-    overflow: hidden;  */
 }
 
 .pack-art{
     height: 300px;
     width: 200px;
+    cursor: pointer;
 }
 
 .pack-section{
-    margin: 3%;
+    margin-bottom: 2%;
     text-align: center;
     font-size: 3rem;
     font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
