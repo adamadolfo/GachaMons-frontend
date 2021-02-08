@@ -1,4 +1,4 @@
-import react from "react"
+import React from "react"
 
 const About = () => {
 
@@ -8,4 +8,4 @@ const About = () => {
     )
 }
 
-export default about
+export default About

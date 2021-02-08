@@ -1,11 +1,14 @@
-import react from "react"
+import React from "react"
+import FirePack from "../Fire.png"
 
-const About = () => {
+const Pack = () => {
 
 
     return (
-        <h1> this is the about page </h1>
+        <>
+            <img className="pack-art" src={FirePack} />
+        </>
     )
 }
 
-export default about
+export default Pack
