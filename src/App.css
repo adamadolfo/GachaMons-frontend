@@ -34,3 +34,25 @@
     color:rgb(255, 255, 255);
     margin-bottom: 2vh;
 }
+
+.introduction {
+    font-size: large;
+    background-color: rgba(24, 24, 24, 0.835);
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    border-style: double;
+    border-color: black;
+    padding: 1%;
+}
+
+.rules {
+    font-size: large;
+    background-color: rgba(24, 24, 24, 0.835);
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    border-style: double;
+    border-color: black;
+    padding: 1%;
+}
