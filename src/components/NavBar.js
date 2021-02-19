@@ -1,6 +1,7 @@
 import React from "react"
 import Logo from '../logo.png'
 import { Grid } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -11,15 +12,22 @@ const NavBar = () => {
         align="center"
         justify="center"
         direction="row"
+        style={{backgroundColor: "#4f4f4f", marginBottom: "8vh"}}
         >
             <Grid item xs={12}>
-                <img src={Logo} style={{height: "20vh", width: "20vh", marginLeft: "20px"}} />
+                <Link to='/' style={{ textDecoration: 'none' }}>
+                    <img src={Logo} style={{height: "20vh", width: "20vh"}} />
+                </Link>
             </Grid>
-            <Grid item xs={6}>
-                <div className="nav-item"> About Format </div>
+            <Grid item xs={5}>
+                <Link to='/about' style={{ textDecoration: 'none' }}>
+                    <div className="nav-item"> About Format </div>
+                </Link>
             </Grid >
-            <Grid item xs={4}>
-                <div className="nav-item"> Pack Details </div>
+            <Grid item xs={5}>
+                <Link to='/details' style={{ textDecoration: 'none' }}>
+                    <div className="nav-item"> Pack Details </div>
+                </Link>
             </Grid>
             
     
