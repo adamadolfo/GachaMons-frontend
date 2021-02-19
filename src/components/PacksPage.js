@@ -1,6 +1,6 @@
 import React from "react"
 import Pack from "./Pack"
-
+import NavBar from "./NavBar"
 import { Grid } from '@material-ui/core';
 
 const PacksPage = () => {
@@ -8,6 +8,7 @@ const PacksPage = () => {
 
     return (
         <>
+            <NavBar />
             <div className="pack-section" >Standard Packs</div>
             <Grid 
             container
