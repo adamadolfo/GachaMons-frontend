@@ -23,17 +23,17 @@ const AboutPage = () => {
                     </p>
                 </Grid>
                 <Grid className="rules"item xs={10}>
-                    <h2> Suggested Draft League Format Rules </h2>
+                    <h2 style={{color: "pink"}}> Suggested Draft League Format Rules </h2>
                     <div> These rules are suggested and your league should adjust and keep track of any data as the season progresses.</div>
-                    <h3> Pack Rules </h3>
-                    <li> Start with a Budget of 2000$ </li>
+                    <h3 style={{color: "pink"}}> Pack Rules </h3>
+                    <li> Start with a Budget of 1500$ </li>
                     <li> Roll A pack which will have a price in the corner. You will be presented the contents of the pack which can be looked up in the Pack Details tab.</li>
                     <li> Pick 1 card to add to your team. The rest will be discarded.</li>
                     <li> You can have between 8-10 pokemon on your team so budget appropriately.</li>
-                    <h3> Battle Rules </h3>
+                    <h3 style={{color: "pink"}}> Battle Rules </h3>
                     <li> In order to keep a season fresh and fun you gain more currency as the season progresses to improve your team.</li>
-                    <li> The winner of the match gains 150 currency</li>
-                    <li> The loser of the match gains 100 currency</li>
+                    <li> The winner of the match gains 125 currency</li>
+                    <li> The loser of the match gains 75 currency</li>
                     <li> There is an acheivements list that has currency bonuses for completing.</li>
                     <div> </div>
                     <div> </div>

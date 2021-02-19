@@ -1,9 +1,12 @@
-import React from "react"
+import React, {useState} from "react"
 import Logo from '../logo.png'
 import { Grid } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
+
+    
+
 
 
     return (
@@ -29,7 +32,7 @@ const NavBar = () => {
                     <div className="nav-item"> Pack Details </div>
                 </Link>
             </Grid>
-            
+          
     
         </Grid>
     )

@@ -13,7 +13,7 @@ const PacksPage = () => {
             <Grid 
             container
             direction="row"
-            spacing={1}
+            spacing={6}
             justify="center" 
             style={{marginBottom: "1%"}}
             >
@@ -32,7 +32,7 @@ const PacksPage = () => {
             <Grid 
             container
             direction="row"
-            spacing={1}
+            spacing={6}
             justify="center" 
             style={{marginBottom: "1%"}}
             >
@@ -96,7 +96,7 @@ const PacksPage = () => {
             <Grid 
             container
             direction="row"
-            spacing={1}
+            spacing={6}
             justify="center" 
             style={{marginBottom: "1%"}}
             >
