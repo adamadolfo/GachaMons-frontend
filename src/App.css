@@ -8,12 +8,14 @@
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     height: max-content; 
+    width: 100%;
 }
 
 .pack-art{
     height: 300px;
     width: 200px;
     cursor: pointer;
+    box-shadow: 3px 3px 0px 0px rgb(51, 51, 51);
 }
 
 .pack-section{
@@ -22,4 +24,11 @@
     font-size: 3rem;
     font-weight: 700;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-item{
+    cursor: pointer;
+    font-size: 3vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: auto;
 }
