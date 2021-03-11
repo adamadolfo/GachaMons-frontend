@@ -126,6 +126,9 @@ const PacksPage = () => {
                 <Grid item>
                     <Pack />
                 </Grid>
+                <Grid item>
+                    <Pack />
+                </Grid>
             </Grid>
 
         </>

@@ -32,12 +32,12 @@ const AboutPage = () => {
                     <li> You can have between 8-10 pokemon on your team so budget appropriately.</li>
                     <h3 style={{color: "pink"}}> Battle Rules </h3>
                     <li> In order to keep a season fresh and fun you gain more currency as the season progresses to improve your team.</li>
-                    <li> The winner of the match gains 125 currency</li>
-                    <li> The loser of the match gains 75 currency</li>
-                    <li> There is an acheivements list that has currency bonuses for completing.</li>
-                    <div> </div>
-                    <div> </div>
-                    <div> </div>
+                    <li> The winner of the match gains 300 currency</li>
+                    <li> The loser of the match gains 150 currency</li>
+                    <li> There is an acheivements list that has currency bonuses for completing. It is suggested the player report the bonuses to the commissioner of the league so they can keep track of budgets. </li>
+                   <table>
+                        
+                   </table>
                 </Grid>
             </Grid>
         </div>
