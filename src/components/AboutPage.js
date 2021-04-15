@@ -34,10 +34,25 @@ const AboutPage = () => {
                     <li> In order to keep a season fresh and fun you gain more currency as the season progresses to improve your team.</li>
                     <li> The winner of the match gains 300 currency</li>
                     <li> The loser of the match gains 150 currency</li>
-                    <li> There is an acheivements list that has currency bonuses for completing. It is suggested the player report the bonuses to the commissioner of the league so they can keep track of budgets. </li>
-                   <table>
-                        
-                   </table>
+                    <li> There is an achievements list that has currency bonuses for completing. It is suggested the player report the bonuses to the commissioner of the league so they can keep track of budgets. </li>
+                </Grid>
+                <Grid item className="achievements" item xs={10}>
+                <table className="achievements-table">
+                    <caption>Monthly savings</caption>
+                    <tr>
+                        <th>Month</th>
+                        <th>Savings</th>
+                    </tr>
+                    <tr>
+                        <td>January</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>February</td>
+                        <td>$80</td>
+                    </tr>
+                </table>
+
                 </Grid>
             </Grid>
         </div>
