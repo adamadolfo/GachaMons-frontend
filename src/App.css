@@ -57,7 +57,21 @@
     padding: 1%;
 }
 
-.achievements-table {
-    border-collapse: collapse;
+table, th, td {
+    border: 1px solid black;
     background-color: white;
+    width: 100%
+    
+  }
+
+  th {
+      background-color: pink;
+  }
+
+  caption {
+      font-size: 3vh;
+      font-weight: bold;
+  }
+.achievements-table {
+    /* border-collapse: collapse; */
 }
