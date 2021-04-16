@@ -118,7 +118,23 @@ const AboutPage = () => {
                         <td>Click only status or non attacking moves.</td>
                         <td>$300</td>
                     </tr>
-
+                    <tr>
+                        <td>No health recovered.</td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td>No hazard removal.</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Do not boost a stat.</td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td>Set up 3 different hazards</td>
+                        <td>$200</td>
+                    </tr>
+                    
 
 
                     <tr>
