@@ -74,4 +74,5 @@ table, th, td {
   }
 .achievements-table {
     /* border-collapse: collapse; */
+    font-size: xx-large;
 }

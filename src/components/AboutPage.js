@@ -26,7 +26,7 @@ const AboutPage = () => {
                     <h2 style={{color: "pink"}}> Suggested Draft League Format Rules </h2>
                     <div> These rules are suggested and your league should adjust and keep track of any data as the season progresses.</div>
                     <h3 style={{color: "pink"}}> Pack Rules </h3>
-                    <li> Start with a Budget of 1500$ </li>
+                    <li> Start with a Budget of $1500 </li>
                     <li> Roll A pack which will have a price in the corner. You will be presented the contents of the pack which can be looked up in the Pack Details tab.</li>
                     <li> Pick 1 card to add to your team. The rest will be discarded.</li>
                     <li> You can have between 8-10 pokemon on your team so budget appropriately.</li>
@@ -38,18 +38,96 @@ const AboutPage = () => {
                 </Grid>
                 <Grid item className="achievements" item xs={10}>
                 <table className="achievements-table">
-                    <caption>Monthly savings</caption>
+                    <caption>Achievements</caption>
                     <tr>
-                        <th>Month</th>
-                        <th>Savings</th>
+                        <th>Achievement</th>
+                        <th>Points</th>
                     </tr>
                     <tr>
-                        <td>January</td>
+                        <td>Win.</td>
+                        <td>$300</td>
+                    </tr> <tr>
+                        <td>Lose.</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td>6-0 Opponent.</td>
+                        <td>$500</td>
+                    </tr>
+                    <tr>
+                        <td>Win 0-0.</td>
+                        <td>$500</td>
+                    </tr>
+                    <tr>
+                        <td>Get 6 kills with one Pokemon.</td>
+                        <td>$500</td>
+                    </tr>
+                    <tr>
+                        <td>Get 5 kills with one Pokemon.</td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td>Get 4 kills with one Pokemon.</td>
+                        <td>$200</td>
+                    </tr>
+                    <tr>
+                        <td>Win without momentum moves (u-turn, volt-switch, teleport, flip turn, baton pass).</td>
+                        <td>$200</td>
+                    </tr>
+                    <tr>
+                        <td>Win without hazards (stealth rock, spikes, toxic spikes, sticky web).</td>
+                        <td>$200</td>
+                    </tr>
+                    <tr>
+                        <td>Opponent quits.</td>
                         <td>$100</td>
                     </tr>
                     <tr>
-                        <td>February</td>
-                        <td>$80</td>
+                        <td>3+ kills with low tier(NU and below).</td>
+                        <td>$200</td>
+                    </tr>
+                    <tr>
+                        <td>Set reflect, light screen, and safeguard in one game.</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Set manual weather.</td>
+                        <td>$200</td>
+                    </tr>
+                    <tr>
+                        <td>Set manual terrain.</td>
+                        <td>$200</td>
+                    </tr>
+                    <tr>
+                        <td>Win without a Pokemon over 80 base speed.</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Win with trick room in effect during the last turn.</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Bring no items.</td>
+                        <td>$250</td>
+                    </tr>
+                    <tr>
+                        <td>Click only STAB moves.</td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <td>Click only status or non attacking moves.</td>
+                        <td>$300</td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td>Every Pokemon has a nickname(for every Pokemon who touches the field).</td>
+                        <td>$50</td>
+                    </tr>
+                    <tr>
+                        <td>Watch a game live as a spectator.</td>
+                        <td>$50</td>
                     </tr>
                 </table>
 
