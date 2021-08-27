@@ -7,8 +7,10 @@
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
-    height: max-content; 
+    /* height: max-content;  */
+    min-height: 100vh;
     width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .pack-art{
@@ -75,4 +77,30 @@ table, th, td {
 .achievements-table {
     /* border-collapse: collapse; */
     font-size: xx-large;
+}
+
+
+/* packs page styling */
+.pack-art {
+    size: 20%;
+}
+
+.pack-name {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* pack view styling */
+#pack-view-image {
+    height: 500px;
+    width: 350px;
+}
+
+#pack-view-main-container {
+    width: 100%;
+}
+
+.pack-view-image-container {
+    text-align: center;
+    width: 100%;
 }

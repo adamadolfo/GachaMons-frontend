@@ -1,13 +1,12 @@
 import React from "react"
-import FirePack from "../Fire.png"
-import background4 from "../background4.jpg"
 
-const Pack = () => {
 
+const Pack = ({ pack , changePackDetails}) => {
 
     return (
         <>
-            <img className="pack-art" src={FirePack} />
+          <img src={pack.art} className="pack-art" onClick={() => changePackDetails(pack)}/>
+          <div className="pack-name"> {pack.name} </div>
         </>
     )
 }
