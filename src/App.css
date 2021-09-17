@@ -3,22 +3,18 @@
 }
 
 .App{
-    background-image: url(background5.jpg) ;
+    /* background-image: url(background5.jpg) ;
     background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    /* background-repeat: no-repeat; Do not repeat the image */ 
+    background-color: #06070E;
     background-size: cover; /* Resize the background image to cover the entire container */
     /* height: max-content;  */
     min-height: 100vh;
     width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(255, 255, 255)
 }
 
-.pack-art{
-    height: 300px;
-    width: 200px;
-    cursor: pointer;
-    box-shadow: 3px 3px 0px 0px rgb(51, 51, 51);
-}
 
 .pack-section{
     margin-bottom: 2%;
@@ -34,8 +30,12 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: auto;
     color:rgb(255, 255, 255);
-    margin-bottom: 2vh;
 }
+
+/* .nav-item :hover {
+    color:rgb(199, 16, 199);
+    font-size: 6 rem;
+} */
 
 .introduction {
     font-size: large;
@@ -81,13 +81,23 @@ table, th, td {
 
 
 /* packs page styling */
-.pack-art {
+.pack-art{
+    height: 300px;
+    width: 200px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
     size: 20%;
 }
+
+.pack-art:hover {
+    box-shadow: 3px 3px 0px 0px rgb(199, 16, 199);
+}
+
 
 .pack-name {
     font-size: 2rem;
     text-align: center;
+    color:rgb(255, 255, 255)
 }
 
 /* pack view styling */

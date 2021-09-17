@@ -2,7 +2,6 @@ import React from "react"
 
 
 const PokemonCard = ({ roll }) => {
-    setTimeout(3000)
     return (
         <>
           {/* <img src={roll.image} /> */}

@@ -7,14 +7,29 @@ import { useState, useEffect } from "react";
 
 const PacksPage = () => {
 
-    const [packs, setPacks] = useState([])
+    // const [typePacks, setTypePacks] = useState([])
+    // const [megaPacks, setMegaPacks] = useState([])
+    // const [rolePacks, setRolePacks] = useState([])
+
     const [packDetails, setPackDetails] = useState(false)
     const [selectedPack, setSelectedPack] = useState()
+
+    const typePacks = []
+    const megaPacks = []
+    const rolePacks = []
 
     useEffect(() => {
         fetch("http://localhost:5000/packs")
         .then(r => r.json())
-        .then(data => setPacks(data))
+        .then(data => data.map(pack => {
+            if(pack.typing == "Type") {
+                typePacks.push(pack)
+            } else if ( pack.typing == "Mega") {
+               megaPacks.push(pack)
+            } else {
+                rolePacks.push(pack)
+            }
+        }))
     }, [])
 
     const changePackDetails = (pack) => {
@@ -22,7 +37,7 @@ const PacksPage = () => {
         setPackDetails(packDetails => !packDetails)
     }
 
-    if (packs.length) {
+    // if (typePacks.length) {
 
         return (
             <>
@@ -38,7 +53,7 @@ const PacksPage = () => {
                         justify="center" 
                         style={{marginBottom: "1%"}}
                         >
-                            {packs.map((pack, index) => 
+                            {typePacks.map((pack, index) => 
                             <Grid item key={index}>
                                 <Pack pack={pack} changePackDetails={changePackDetails}/>
                             </Grid>   
@@ -53,6 +68,11 @@ const PacksPage = () => {
                         justify="center" 
                         style={{marginBottom: "1%"}}
                         >
+                            {megaPacks.map((pack, index) => 
+                            <Grid item key={index}>
+                                <Pack pack={pack} changePackDetails={changePackDetails}/>
+                            </Grid>   
+                                )}
                     
                         </Grid>
             
@@ -73,8 +93,8 @@ const PacksPage = () => {
     
             </>
         )
-    }
-    return null
+    // }
+    // return null
 }
 
 export default PacksPage

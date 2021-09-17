@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useState} from 'react'
+import React from 'react'
 import PacksPage from "./components/PacksPage"
 import PackDetails from './components/PackDetails'
 import AboutPage from './components/AboutPage'
