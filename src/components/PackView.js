@@ -10,7 +10,8 @@ const PackView = ({ selectedPack, changePackDetails }) => {
 
     const rollPack = () => {
         const obj = {
-            pack_id: selectedPack.id
+            pack_id: selectedPack.id,
+            pack_typing: selectedPack.typing
         }
 
         fetch("http://localhost:5000/packs/roll_pack", {

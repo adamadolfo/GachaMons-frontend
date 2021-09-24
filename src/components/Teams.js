@@ -1,16 +1,16 @@
 import React from "react"
 import NavBar from "./NavBar"
 
-const PackDetails = () => {
+const Teams = () => {
 
     return (
         <>
             <NavBar />
             <div>
-                hi
+                Teams
             </div>
         </>
     )
 }
 
-export default PackDetails
+export default Teams
