@@ -90,7 +90,7 @@ const PacksPage = () => {
                             }
                         </Grid>
             
-                        {/* <div className="pack-section" >Role Packs</div> */}
+                        <div className="pack-section">Role Packs</div>
                         <Grid 
                         container
                         direction="row"
@@ -98,7 +98,15 @@ const PacksPage = () => {
                         justify="center" 
                         style={{marginBottom: "1%"}}
                         >
-                        
+                            {
+                                packs.map((pack) => {
+                                    if(pack.typing == "Role") {
+                                        return (<Grid item>
+                                            <Pack pack={pack} changePackDetails={changePackDetails}/>
+                                        </Grid> ) 
+                                    }
+                                })
+                            }
                         </Grid>
                     </> 
                 :
