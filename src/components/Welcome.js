@@ -34,7 +34,7 @@ function Welcome() {
             password: password
         };
 
-        const response = await fetch("localhost:5000/session", {
+        const response = await fetch("http://localhost:5000/login", {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(user)
@@ -51,19 +51,24 @@ function Welcome() {
     }
 
 
-
-
-
     return (
         <div className="welcome">
-            <form onSubmit={(e) => handleSubmit(e)}>
-                <div>Sign In</div>
-                <input onChange={(e) => handleName(e)} value={name} />
-                <input onChange={(e) => handlePassword(e)} value={password} type="password"  />
-                <button type="submit" >Sign In</button>
-            </form>
-            <button onClick={showSignUp} >Don't have an account? Sign Up</button>               
-                            
+            {
+                !signup 
+                ?
+                <div>
+                    <form onSubmit={(e) => handleSubmit(e)}>
+                        <div>Sign In</div>
+                        <input onChange={(e) => handleName(e)} value={name} />
+                        <input onChange={(e) => handlePassword(e)} value={password} type="password"  />
+                        <button type="submit" >Sign In</button>
+                    </form>
+                    <button onClick={showSignUp} >Don't have an account? Sign Up</button>               
+                </div>    
+                :
+                <SignUp showSignUp={showSignUp} />
+
+            }
                         
                 
               

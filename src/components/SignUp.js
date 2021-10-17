@@ -34,14 +34,14 @@ function SignUp(props) {
                 password: password,
             };
             console.log(user)
-            const response = await fetch("http://localhost:5000/users", {
+            const response = await fetch("https://localhost:5000/login", {
                 method: "POST",
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(user)
             })
             const loggedInUser = await response.json()
             localStorage.setItem('user', JSON.stringify(loggedInUser))
-            // history.push("/swipe"); important
+            history.push("/packs-page"); 
         } else {
             alert("Passwords do not match")
         }
