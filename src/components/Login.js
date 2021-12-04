@@ -7,7 +7,7 @@ import { useHistory } from "react-router-dom";
 
 
 
-function Welcome() {
+function Login() {
 
 
     // react code
@@ -52,7 +52,7 @@ function Welcome() {
 
 
     return (
-        <div className="welcome">
+        <div className="login">
             {
                 !signup 
                 ?
@@ -80,4 +80,4 @@ function Welcome() {
     );
   }
   
-  export default Welcome;
+  export default Login;

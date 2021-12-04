@@ -3,7 +3,7 @@ import React from 'react'
 import PacksPage from "./components/PacksPage"
 import Teams from './components/Teams'
 import AboutPage from './components/AboutPage'
-import Welcome from './components/Welcome'
+import Login from './components/Login'
 import {BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Redirect } from "react-router-dom";
 
@@ -17,7 +17,7 @@ function App() {
           <Route path='/about' component={AboutPage} />
           <Route path='/teams' component={Teams} />
           <Route path='/packs-page' component={PacksPage} />
-          <Route exact path="/welcome" component={Welcome} />
+          <Route exact path="/welcome" component={Login} />
           <Route exact path="/">
           {loggedIn ? <Redirect to="/packs-page" /> : <Redirect to="/welcome" />}
           </Route>

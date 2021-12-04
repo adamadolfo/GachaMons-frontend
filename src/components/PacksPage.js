@@ -2,6 +2,7 @@ import React from "react"
 import Pack from "./Pack"
 import NavBar from "./NavBar"
 import PackView from "./PackView"
+import TeamSelector from "./TeamSelector"
 import { Grid } from '@material-ui/core';
 import { useState, useEffect } from "react";
 
@@ -15,6 +16,7 @@ const PacksPage = () => {
     const [packDetails, setPackDetails] = useState(false)
     const [selectedPack, setSelectedPack] = useState()
 
+    const loggedInUser = localStorage.getItem("user")
 
     useEffect(() => {
         fetch("http://localhost:5000/packs")
@@ -32,10 +34,10 @@ const PacksPage = () => {
         return (
             <>
                 <NavBar />
+                <div className="pack-section" >hello, {loggedInUser.name}</div>
                 {
                 !packDetails ? 
                     <>
-                        {/* <div className="pack-section" >Standard Packs</div> */}
                         <div className="pack-section">Standard Packs</div>
                         <Grid 
                         container
